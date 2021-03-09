@@ -1,6 +1,6 @@
 {
   "name": "yamlspec",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate Jasmine-compatible .js specification files from .yaml-formatted specification file",
   "main": "index.js",
   "bin": {
@@ -10,7 +10,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ion Gireada <shytiger@yahoo.com>",
-  "keywords": ["Jasmine", "test", "testing", "yml", "specification"],
+  "keywords": [
+    "Jasmine",
+    "test",
+    "testing",
+    "yml",
+    "specification"
+  ],
   "license": "MIT",
   "devDependencies": {
     "commander": "^7.1.0",
