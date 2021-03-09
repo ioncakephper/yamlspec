@@ -1,0 +1,19 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "bin": {
+      "name": "bin",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "spec": {
+      "name": "spec",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    }
+  },
+  "files": {}
+}
