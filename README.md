@@ -1,5 +1,7 @@
 # yamlspec
 
+Generates `JavaScript` package specification files from a `.yml` specification file, giving both developers and QA team a quick and productive tool for writing specifications.  
+
 ## Installation
 
 Install `yamlspec` globally so you can invoke it as command-line program:
