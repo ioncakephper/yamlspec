@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ion Gireada <shytiger@yahoo.com>",
+  "keywords": ["Jasmine", "test", "testing", "yml", "specification"],
   "license": "MIT",
   "devDependencies": {
     "commander": "^7.1.0",
