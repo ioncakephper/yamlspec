@@ -1,0 +1,18 @@
+{{#if package}}
+const {{{package.const}}} = require('{{{package.require}}}');
+{{/if}}
+
+{{#each items as |item|}}
+
+describe('{{{item.describe.what}}}', () => {
+    {{#each item.describe.items as |item|}}
+
+    it('{{{item.it}}}', () => {
+        //
+        // @todo {{{item.it}}}
+        //
+        expect(0).toEqual(1);
+    })
+    {{/each}}
+})
+{{/each}}

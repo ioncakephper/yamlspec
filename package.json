@@ -1,0 +1,20 @@
+{
+  "name": "yamlspec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "yamlspec": "./bin/yamlspec.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "commander": "^7.1.0",
+    "file-easy": "^1.0.3",
+    "hbsr": "^1.0.6",
+    "yamljs": "^0.3.0"
+  }
+}

@@ -1,0 +1,19 @@
+package:
+  require: file-easy
+  const: fileEasy
+items:
+  - describe:
+      what: form 'create'
+      items:
+        - it: Should raise exception when 'input' param is not an object
+        - it: Should return an object
+        - it: Returned object values should be an object
+        - it: Returned object should contain type key
+        - it: Returned object should contain name key
+        - it: Returned object should contain label key
+
+  - describe:
+      what: form render
+      items:
+        - it: Returned object should be string
+        - it: Should return empty string when form has no fields

@@ -1,0 +1,48 @@
+
+items:
+  - describe:
+      what: yamlspec command line help and verion switches
+      items:
+        - it: should respond to -h
+        - it: should respond to -V
+        - it: should respond with an error message to -v (lowercase)
+        - it: should respond to --help
+        - it: should show command description after usage
+        - it: should have every option description start with lowercase
+        - it: the response to -h, --help should start with 'Usage' and mention the source file
+
+  - describe:
+      what: yamlspec switches
+      items:
+        - it: should respond to -s with string
+        - it: should respond to --suffix with string
+        - it: should warn -s expects string when no string provided
+        - it: should warn --suffix expects string when no string provided
+        - it: should use 'Spec' as default value when neither -s nor --suffix appear
+
+        - it: should respond to -p with path following
+        - it: should respond to --path with path following
+        - it: should warn -p expects string when no string provided
+        - it: should warn --path expects string when no string provided
+        - it: should use '../spec' as default value when neither -p nor --path appear
+
+  - describe:
+      what: yamlspec source file
+      items:
+        - it: should accept only a single file
+
+  - describe:
+      what: yamlspec generated javascript file
+      items:
+        - it: should have the '.js' extension
+        - it: basename should end with 'Spec' when neither -s nor --suffix appear
+        - it: basename should end with value of -s when -s <suffix> provided
+        - it: basename should end with value of --suffix when --suffix <suffix> provided
+
+        - it: should appear in the '../spec' folder when neither -p nor --path specified
+        - it: should appear in the folder specified in -p <path>
+        - it: should appear in the folder specified in --path <path>
+
+        - it: should be error free when run via 'jasmine'
+
+
