@@ -10,6 +10,12 @@ npm i -g yamlspec
 
 ## YML-format specifications
 
+To expedite specification formulation process, `yamlspec` introduces its alternative to traditional `.js` code. Those familiar with `Jasmine` and its related specification frameworks based on `.js` will recognize the `describe` and `it` entries.
+
+The example below contains specifications for `<packageName>` package, which is invoked with a `require` statement. The package is placed in a constant whose name is also `<packageName>`.
+
+The specification contains two `describe` sections, aka "test sets", inside the `items` key. Each section contains its own test cases as `it` entries. The test cases fall under a test set's `items`.
+
 ```yaml
 package:
     - require: <packageName>
