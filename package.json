@@ -1,6 +1,6 @@
 {
   "name": "yamlspec",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate Jasmine-compatible .js specification files from .yaml-formatted specification file",
   "main": "index.js",
   "bin": {
