@@ -10,6 +10,13 @@ Install `yamlspec` globally so you can invoke it as command-line program:
 npm i -g yamlspec
 ```
 
+Check `yamlspec` runs at command-prompt:
+
+```bash
+yamlspec -V
+v1.0.5
+```
+
 ## YML-format specifications
 
 To expedite specification formulation process, `yamlspec` introduces its alternative to traditional `.js` code. Those familiar with `Jasmine` and its related specification frameworks based on `.js` will recognize the `describe` and `it` entries.
@@ -44,8 +51,7 @@ const yamlspec = require('yamlspec')
 let sourceFilename = '/path/to/specsInYamlFormat.yml';
 
 let source = yamlspec.loadFile(sourceFilename)
-
-let output = yamlspec.renderFile(outputFilename, source)
+yamlspec.renderFile('/path/to/spec/folder/specfilename.js', source);
 ```
 
 ## CLI
