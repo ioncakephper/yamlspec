@@ -51,6 +51,21 @@ let output = yamlspec.renderFile(outputFilename, source)
 ```bash
 yamlspec [options] sourceFilename
 ```
+```bash
+yamlspec -h
+Usage: yamlspec [options] sourceFilename
+
+YAML to Jasmine specification generator.
+
+Options:
+  -V, --version                      output the version number
+  -o, --output <outfilename>         name of extended specification filename
+  -s, --suffix <suffix>              suffix text to go after test basename (default: "Spec")
+  -p, --path <outpath>               root path for generated specification files (default: "./spec")
+  -t, --templatepath <templatepath>  path to templates (default: ".\\bin\\templates")
+  -h, --help                         display help for command
+```
+
 
 ## Examples
 
