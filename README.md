@@ -138,3 +138,57 @@ describe('Simple test suite', () => {
 jasmine
 ```
 
+## API
+### Functions
+
+<dl>
+<dt><a href="#loadFile">loadFile(sourceFilename, [options])</a> ⇒ <code>Object</code></dt>
+<dd><p>Load source file with YAML specification.</p>
+</dd>
+<dt><a href="#render">render(source, [options])</a> ⇒ <code>string</code></dt>
+<dd><p>Render extended specification content.</p>
+</dd>
+<dt><a href="#renderFile">renderFile(outputFilename, source, [options])</a></dt>
+<dd><p>Render file with exptended specification content.</p>
+</dd>
+</dl>
+
+<a name="loadFile"></a>
+
+### loadFile(sourceFilename, [options]) ⇒ <code>Object</code>
+Load source file with YAML specification.
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - Specification object.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| sourceFilename | <code>string</code> |  | Source filename in .yaml format |
+| [options] | <code>Object</code> | <code>{}</code> | File loading options. |
+
+<a name="render"></a>
+
+### render(source, [options]) ⇒ <code>string</code>
+Render extended specification content.
+
+**Kind**: global function  
+**Returns**: <code>string</code> - Expanded resulting specification content.  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| source | <code>Object</code> |  | Specification object. |
+| [options] | <code>Object</code> | <code>{}</code> | Rendering options. |
+
+<a name="renderFile"></a>
+
+### renderFile(outputFilename, source, [options])
+Render file with exptended specification content.
+
+**Kind**: global function  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| outputFilename | <code>string</code> |  | Path-like string of output filename. |
+| source | <code>Object</code> |  | Specification object. |
+| [options] | <code>Object</code> | <code>{}</code> | Rendering options. |
+
